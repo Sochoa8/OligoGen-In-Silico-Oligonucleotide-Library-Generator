@@ -13,7 +13,40 @@ OligoGen is a Python-based tool designed for generating **randomized oligonucleo
 ## **Installation**
 This script requires **Python 3**. Clone the repository and run it locally:
 
-```bash
 git clone https://github.com/YourUsername/OligoGen.git
 cd OligoGen
 python oligo_generator.py
+
+### The script will prompt for:
+1.	Oligonucleotide sequence pattern
+	- Example: N(50005000)ATCGN
+2.	Number of sequences to generate
+	- Example: 100
+3.	Output file name
+	- Example: sequences.fasta
+
+## **Example Run**
+```
+$ python oligo_generator.py
+Enter your oligonucleotide sequence: N(50005000)ATCGN
+Enter the number of sequences to generate: 100
+Enter the output file name: sequences.fasta
+Generating 100 sequences...
+100 sequences saved to sequences.fasta in FASTA format.
+```
+
+### Example FASTA Output
+```
+>Seq_1
+GATCGG
+>Seq_2
+AATCGT
+>Seq_3
+GATCGG
+>Seq_4
+TATCGA
+>Seq_5
+GGTCCA
+...
+```
+The generated sequences will be saved in a FASTA file for easy integration into bioinformatics workflows.
